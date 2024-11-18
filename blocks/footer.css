@@ -1,15 +1,11 @@
 .footer {
-  align-items: center;
-  margin-bottom: 60px;
+  text-align: center;
+
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-}
-
-.footer__content {
-  display: flex;
-  justify-content: center;
+  margin-top: 60px;
 }
 
 .footer__logo {
