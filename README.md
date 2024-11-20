@@ -12,4 +12,6 @@ This project is made so all the elements are displayed correctly on popular scre
 
 Deployment Link: https://kisha07.github.io/se_project_spots/
 
+Video Link: https://drive.google.com/file/d/1yur8vURROeVif8dqoamVwSe2KTHaHU95/view?usp=sharing
+
 Hope you enjoy!
