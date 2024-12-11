@@ -26,7 +26,7 @@
   justify-content: space-between;
 }
 
-.card__like-button {
+.card__like-btn {
   background-image: url(../images/Like\ button.svg);.
   background-size: contain;
   width: 23px;
@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 
-.card__like-button:hover {
+.card__like-btn:hover {
   opacity: 100%;
 }
 
@@ -55,7 +55,7 @@
     height: 288px;
   }
 
-  .card__like-button {
+  .card__like-btn {
     width: 20px;
     height: 18px;
 

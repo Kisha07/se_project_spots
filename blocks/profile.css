@@ -50,7 +50,7 @@
   color: #212121;
 }
 
-.profile__edit-button {
+.profile__edit-btn {
   margin-top: auto;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -66,11 +66,11 @@
   cursor: pointer;
 }
 
-.profile__edit-button:hover {
+.profile__edit-btn:hover {
   opacity: 100%;
 }
 
-.profile__add-button {
+.profile__add-btn {
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -90,7 +90,7 @@
   cursor: pointer;
 }
 
-.profile__add-button:hover {
+.profile__add-btn:hover {
   opacity: 80%;
 }
 
@@ -125,14 +125,14 @@
     margin-right: 0;
   }
 
-  .profile__add-button {
+  .profile__add-btn {
     margin: 0;
     max-width: 288px;
     width: 100%;
     text-align: center;
   }
 
-  .profile__edit-button {
+  .profile__edit-btn {
     margin-bottom: 20px;
     align-self: center;
   }
