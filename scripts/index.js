@@ -50,6 +50,10 @@ const previewModal = document.querySelector("#preview-modal");
 const previewModalImageEl = previewModal.querySelector(".modal__image");
 const previewModalCaptionEl = previewModal.querySelector(".modal__caption");
 
+const previewModalCloseBtn = previewModal.querySelector(
+  ".modal__close-btn_type_preview"
+);
+
 //Card related elements
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -81,6 +85,10 @@ function getCardElement(data) {
     previewModalCaptionEl.textContent = data.name;
     previewModalImageEl.src = data.link;
     previewModalImageEl.alt = data.name;
+
+    previewModalCloseBtn.addEventListener("click", () => {
+      closeModal(previewModal);
+    });
   });
 
   return cardElement;

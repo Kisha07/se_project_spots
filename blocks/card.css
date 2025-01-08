@@ -33,11 +33,11 @@
 }
 
 .card__like-btn {
-  background: transparent url(../images/Like\ button.svg) no-repeat;
+  background: transparent url(../images/Liked\ Button\ Red.png) no-repeat;
   background-size: contain;
   width: 23px;
   height: 20px;
-  border: 1px;
+  border: none;
 
   opacity: 0.4;
   color: #212121;
@@ -68,6 +68,11 @@
   position: absolute;
   top: 10px;
   right: 10px;
+  cursor: pointer;
+}
+
+.card__delete-btn:hover {
+  background-image: url(../images/Delete\ Btn\ Hover.png);
 }
 
 @media screen and (max-width: 627px) {
