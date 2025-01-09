@@ -56,7 +56,7 @@
         <p class="footer__copyright">2023 &#64; Spots</p>
       </footer>
       <div class="modal" id="edit-modal">
-        <div class="modal__container">
+        <div class="modal__content">
           <button type="submit" class="modal__close-btn"></button>
           <h2 class="modal__title">Edit profile</h2>
           <form name="edit-profile" class="modal__form">
@@ -117,19 +117,16 @@
       </div>
     </div>
 
-    <div class="modal" id="preview-modal">
-    <div class="modal__content modal__content_type_preview">
-      <button
-        aria-label="Close Modal"
-        class="modal__close-btn modal__close-btn_type_preview"
-        type="button"
-      ></button>
-      <img
-        class="modal__image"
-        src=""
-        alt=""
-      />
-      <p class="modal__caption"></p>
+    <div class="modal modal__content_type_preview" id="preview-modal">
+      <div class="modal__image-container">
+        <button
+          aria-label="Close Modal"
+          class="modal__close-btn modal__close-btn_type_preview"
+          type="button"
+        ></button>
+        <img class="modal__image" src="" alt="" />
+        <p class="modal__caption"></p>
+      </div>
     </div>
     <script defer src="./scripts/index.js"></script>
   </body>
