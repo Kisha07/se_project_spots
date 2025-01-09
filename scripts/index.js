@@ -76,8 +76,8 @@ function getCardElement(data) {
     cardLikeBtn.classList.toggle("card__like-btn_liked");
   });
 
-  cardDeleteBtn.addEventListener("click", (evt) => {
-    evt.target.closest(".card").remove();
+  cardDeleteBtn.addEventListener("click", () => {
+    cardElement.remove();
   });
 
   cardImageEl.addEventListener("click", () => {
@@ -85,10 +85,10 @@ function getCardElement(data) {
     previewModalCaptionEl.textContent = data.name;
     previewModalImageEl.src = data.link;
     previewModalImageEl.alt = data.name;
+  });
 
-    previewModalCloseBtn.addEventListener("click", () => {
-      closeModal(previewModal);
-    });
+  previewModalCloseBtn.addEventListener("click", () => {
+    closeModal(previewModal);
   });
 
   return cardElement;
