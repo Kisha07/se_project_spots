@@ -167,6 +167,10 @@
     position: absolute;
   }
 
+  .modal__close-btn_type_preview {
+    top: -45px;
+  }
+
   .modal__label {
     margin-bottom: 24px;
   }
