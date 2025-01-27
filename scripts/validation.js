@@ -10,13 +10,13 @@ const settings = {
 const showInputError = (formEl, inputEl, errorMsg, config) => {
   const errorMsgEl = formEl.querySelector(`#${inputEl.id}-error`);
   errorMsgEl.textContent = errorMsg;
-  inputEl.classList.add("config.inputErrorClass");
+  inputEl.classList.add(config.inputErrorClass);
 };
 
 const hideInputError = (formEl, inputEl, config) => {
   const errorMsgEl = formEl.querySelector(`#${inputEl.id}-error`);
   errorMsgEl.textContent = "";
-  inputEl.classList.remove("config.inputErrorClass");
+  inputEl.classList.remove(config.inputErrorClass);
 };
 
 const checkInputValidity = (formEl, inputEl, config) => {
@@ -35,17 +35,17 @@ const hasInvalidInput = (inputList, config) => {
 
 const toggleButtonState = (inputList, buttonEl, config) => {
   if (hasInvalidInput(inputList)) {
-    buttonEl.classList.add("config.inactiveButtonClass");
+    buttonEl.classList.add(config.inactiveButtonClass);
     buttonEl.disabled = true;
   } else {
-    buttonEl.classList.remove("config.inactiveButtonClass");
+    buttonEl.classList.remove(config.inactiveButtonClass);
     buttonEl.disabled = false;
   }
 };
 
 const disableButton = (buttonEl, config) => {
   buttonEl.disabled = true;
-  buttonEl.classList.add("config.inactiveButtonClass");
+  buttonEl.classList.add(config.inactiveButtonClass);
 };
 
 const resetValidation = (formEl, inputList, config) => {
@@ -56,7 +56,7 @@ const resetValidation = (formEl, inputList, config) => {
 
 const setEventListeners = (formEl, config) => {
   const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
-  const buttonElement = formEl.querySelector("config.submitButtonSelector");
+  const buttonElement = formEl.querySelector(config.submitButtonSelector);
 
   toggleButtonState(inputList, buttonElement, config);
 
@@ -69,7 +69,7 @@ const setEventListeners = (formEl, config) => {
 };
 
 const enablevalidation = (config) => {
-  const formList = document.querySelectorAll("config.formSelector");
+  const formList = document.querySelectorAll(config.formSelector);
   formList.forEach((formEl) => {
     setEventListeners(formEl, config);
   });
