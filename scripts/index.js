@@ -125,7 +125,7 @@ function handleAddCardSubmit(evt) {
 profileEditButton.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
-  resetValidation(editFormElement, [
+  resetValidation(settings, editFormElement, [
     editModalNameInput,
     editModalDescriptionInput,
   ]);
