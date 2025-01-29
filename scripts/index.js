@@ -95,14 +95,14 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
-  document.addEventListener("keydown", modalEscClose);
-  modal.addEventListener("mousedown", modalOverLayClose);
+  document.addEventListener("keydown", handleEscapeClose);
+  modal.addEventListener("mousedown", handleOverLayClose);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
-  document.removeEventListener("keydown", modalEscClose);
-  modal.removeEventListener("mousedown", modalOverLayClose);
+  document.removeEventListener("keydown", handleEscapeClose);
+  modal.removeEventListener("mousedown", handleOverLayClose);
 }
 
 function handleEditFormSubmit(evt) {
@@ -123,17 +123,16 @@ function handleAddCardSubmit(evt) {
   evt.target.reset();
   closeModal(cardModal);
   disableButton(cardSubmitBtn, settings);
-  evt.target.reset();
 }
 
-function modalEscClose(evt) {
+function handleEscapeClose(evt) {
   if (evt.key === "Escape") {
     const modal = document.querySelector(".modal_opened");
     closeModal(modal);
   }
 }
 
-function modalOverLayClose(evt) {
+function handleOverLayClose(evt) {
   if (evt.target.classList.contains("modal")) {
     closeModal(evt.target);
   }
