@@ -11,11 +11,13 @@
   justify-content: center;
   padding: 0 20px;
   visibility: hidden;
-  transition: visibility 0.3s, opacity 0.3s ease-in;
+  opacity: 0;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
 }
 
 .modal_opened {
   visibility: visible;
+  opacity: 1;
 }
 
 .modal__content {
@@ -42,7 +44,7 @@
 }
 
 .modal__image:hover {
-  border: 2px solid blue;
+  border: 2px solid;
 }
 
 .modal__image-container {
@@ -69,10 +71,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.modal__caption:hover {
-  border: 2px solid blue;
 }
 
 .modal__close-btn {
