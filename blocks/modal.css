@@ -32,8 +32,8 @@
 
 .modal__content_type_preview {
   padding: 0;
-  background-color: transparent;
-  max-width: fit-content;
+
+  width: unset;
 }
 
 .modal__image {
