@@ -32,7 +32,7 @@
 }
 
 .card__like-btn {
-  background: transparent url(../images/Card-Like-Button.png) center no-repeat;
+  background: transparent url(../images/CardLikeButton.svg) center no-repeat;
   background-size: contain;
   width: 23px;
   height: 20px;
@@ -50,7 +50,7 @@
 }
 
 .card__like-btn_liked {
-  background-image: url(../images/Liked\ Button\ Red.png);
+  background-image: url(../images/LikedButtonRed.svg);
   opacity: 1;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .card__delete-btn {
-  background-image: url(../images/Delete\ btn.png);
+  background-image: url(../images/DeleteBtn.svg);
   background-color: transparent;
   width: 32px;
   height: 32px;
@@ -71,14 +71,14 @@
 }
 
 .card__delete-btn:hover {
-  background-image: url(../images/Delete\ Btn\ Hover.png);
+  background-image: url(../images/DeleteBtnHover.svg);
 }
 
 @media screen and (max-width: 627px) {
   .card__title {
     max-width: 250px;
     font-size: 16px;
-    font-weight: 500px;
+    font-weight: 500;
     line-height: 16px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     padding: 10px 0;
