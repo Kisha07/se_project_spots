@@ -172,10 +172,6 @@
     padding: 0 10px;
   }
 
-  .modal__content {
-    padding: 12px;
-  }
-
   .modal__title {
     font-size: 20px;
     margin: 10px 0 34px;
@@ -188,7 +184,7 @@
   }
 
   .modal__close-btn_type_preview {
-    top: -35px;
+    top: -45px;
     right: 0;
   }
 
@@ -201,7 +197,7 @@
   }
 
   .modal__image {
-    max-width: 100%;
+    max-width: 90vw;
 
     width: auto;
     height: auto;
